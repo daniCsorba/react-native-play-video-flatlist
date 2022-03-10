@@ -14,12 +14,4 @@ module.exports = {
   resolver: {
     blacklistRE: exclusionList([/dist\/.*/])
     }
-  transformer: {
-    getTransformOptions: async () => ({
-      transform: {
-        experimentalImportSupport: false,
-        inlineRequires: false,
-      },
-    }),
-  },
 };
